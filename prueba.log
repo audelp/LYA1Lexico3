@@ -1,0 +1,38 @@
+123.45e-8 = Numero
+radioDeLaCircunferencia = Identificador
+; = finSentencia
+&& = opLogico
+& = Caracter
+|| = opLogico
+| = Caracter
+! = Caracter
+!= = opRelacional
+> = opRelacional
+>= = opRelacional
+< = opRelacional
+<> = opRelacional
+< = opRelacional
+<= = opRelacional
++ = opTermino
+++ = incTermino
++= = incTermino
+- = opTermino
+-- = incTermino
+-= = incTermino
+% = opFactor
+%= = incFactor
+* = opFactor
+*= = incFactor
+? = opTernario
+? = opTernario
+? = opTernario
+{} = llaveInicio
+} = llaveInicio
+} = llaveInicio
+"hola mundo" = cadena
+/ = Caracter
+/= = incFactor
+/*audel
+PERA
+1909
+*/ = comentario

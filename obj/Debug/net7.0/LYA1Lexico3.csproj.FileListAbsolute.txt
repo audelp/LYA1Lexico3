@@ -1,0 +1,14 @@
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\bin\Debug\net7.0\LYA1Lexico3.exe
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\bin\Debug\net7.0\LYA1Lexico3.deps.json
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\bin\Debug\net7.0\LYA1Lexico3.runtimeconfig.json
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\bin\Debug\net7.0\LYA1Lexico3.dll
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\bin\Debug\net7.0\LYA1Lexico3.pdb
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\obj\Debug\net7.0\LYA1Lexico3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\obj\Debug\net7.0\LYA1Lexico3.AssemblyInfoInputs.cache
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\obj\Debug\net7.0\LYA1Lexico3.AssemblyInfo.cs
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\obj\Debug\net7.0\LYA1Lexico3.csproj.CoreCompileInputs.cache
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\obj\Debug\net7.0\LYA1Lexico3.dll
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\obj\Debug\net7.0\refint\LYA1Lexico3.dll
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\obj\Debug\net7.0\LYA1Lexico3.pdb
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\obj\Debug\net7.0\LYA1Lexico3.genruntimeconfig.cache
+C:\Users\audel\OneDrive\Documentos\automatas\unidad 4\LYA1Lexico3\obj\Debug\net7.0\ref\LYA1Lexico3.dll
