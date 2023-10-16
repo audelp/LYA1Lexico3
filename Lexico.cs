@@ -37,43 +37,43 @@ namespace LYA1_Lexico3
 
         int[,] TRAND =  
         {
-    //   0  1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  20  21  22  23 
-    //   WS	L	D	.	E	+	-	=	;	&	|	!	>	<	*	/	%	?	"	{	}	La	EOL	EOF
-        {0 ,1 ,	2 ,	27,	1 ,	19,	20,	8 ,	10,	11,	12,	13,	16,	17,	22,	28,	22,	24,	25,	32,	33,	27,	F,	F},//0
-        {F ,1 ,	1 ,	F ,	1 ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//1
-        {F ,F ,	2 ,	3 ,	5 ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//2
-        {E ,E ,	4 ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E,	E,	E,	E,	E,	E,	E,	E,	E,	E,	E,	F},//3
-        {F ,F ,	4 ,	F ,	5 ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//4
-        {E ,E ,	7 ,	E ,	E ,	6 ,	6 ,	E ,	E ,	E ,	E ,	E ,	E,	E,	E,	E,	E,	E,	E,	E,	E,	E,	E,	F},//5
-        {E ,E ,	7 ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E,	E,	E,	E,	E,	E,	E,	E,	E,	E,	E,	F},//6
-        {F ,F ,	7 ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//7
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	9 ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//8
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//9
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//10
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	14,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//11
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	14,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//12
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	15,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//13
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//14
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//15
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	18,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//16
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	18,	F ,	F ,	F ,	F ,	18,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//17
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//18
-        {F ,F ,	F ,	F ,	F ,	21,	F ,	21,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//19
-        {F ,F ,	F ,	F ,	F ,	F ,	21,	21,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//20
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//21
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	23,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//22
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//23
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//24
-        {25,25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	26,	25,	25,	25,	F,	F},//25
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//26
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//27
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	23,	F ,	F ,	F ,	F ,	F,	F,	30,	29,	F,	F,	F,	F,	F,	F,	F,	F},//28
-        {29,29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	F,	F},//29
-        {30,30,	30,	30,	30,	30,	30,	30,	30,	30,	30,	30,	30,	30,	31,	30,	30,	30,	30,	30,	30,	30,	F,	E},//30
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	31,	32,	F,	F,	F,	F,	F,	30,	F,	E},//31
-        {0 ,0 ,	0 ,	0 ,	0 ,	0 ,	0 ,	0 ,	0 ,	0 , 0 ,	0 ,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	F},//32
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//33
-        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F},//34
+    //   0  1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  20  21  22  23
+    //   WS	L	D	.	E	+	-	=	;	&	|	!	>	<	*	/	%	?	"	{	}	La	EOF EOL
+        {0 ,1 ,	2 ,	27,	1 ,	19,	20,	8 ,	10,	11,	12,	13,	16,	17,	22,	28,	22,	24,	25,	32,	33,	27,	F, 0},//0
+        {F ,1 ,	1 ,	F ,	1 ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//1
+        {F ,F ,	2 ,	3 ,	5 ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//2
+        {E ,E ,	4 ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E,	E,	E,	E,	E,	E,	E,	E,	E,	E,	F, 0},//3
+        {F ,F ,	4 ,	F ,	5 ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//4
+        {E ,E ,	7 ,	E ,	E ,	6 ,	6 ,	E ,	E ,	E ,	E ,	E ,	E,	E,	E,	E,	E,	E,	E,	E,	E,	E,	F, 0},//5
+        {E ,E ,	7 ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E ,	E,	E,	E,	E,	E,	E,	E,	E,	E,	E,	F, 0},//6
+        {F ,F ,	7 ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//7
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	9 ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//8
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//9
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//10
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	14,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//11
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	14,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//12
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	15,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//13
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//14
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//15
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	18,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//16
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	18,	F ,	F ,	F ,	F ,	18,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//17
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//18
+        {F ,F ,	F ,	F ,	F ,	21,	F ,	21,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//19
+        {F ,F ,	F ,	F ,	F ,	F ,	21,	21,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//20
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//21
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	23,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//22
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//23
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//24
+        {25,25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	25,	26,	25,	25,	25,	F, 0},//25
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//26
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//27
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	23,	F ,	F ,	F ,	F ,	F,	F,	30,	29,	F,	F,	F,	F,	F,	F,	F, 0},//28
+        {29,29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	29,	F, F},//29
+        {30,30,	30,	30,	30,	30,	30,	30,	30,	30,	30,	30,	30,	30,	31,	30,	30,	30,	30,	30,	30,	30,	E, 0},//30
+        {30,30,	30,	30,	30,	30,	30,	30,	30,	30,	30,	30, 30, 30,	31,	32,	30,	30,	30, 30, 30,	30,	E, 0},//31
+        {F ,F ,	F ,	F ,	F , F ,	F ,	F ,	F ,	F , F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//32
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//33
+        {F ,F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F ,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F,	F, 0},//34 
 
         };
 
@@ -95,13 +95,15 @@ namespace LYA1_Lexico3
             log.Close();
         }
         private int columna(char c)
-        {
-            if (char.IsWhiteSpace(c))
+        {   
+            if(c=='\n')
+                return 23;
+            else if(archivo.EndOfStream)
+                return 22;
+            else if (char.IsWhiteSpace(c))
                 return 0;
             else if (char.ToLower(c) == 'e')
                 return 4;
-            else if(archivo.EndOfStream)
-                return 23;
             else if (char.IsLetter(c))
                 return 1;
             else if (char.IsAsciiDigit(c))
@@ -137,12 +139,9 @@ namespace LYA1_Lexico3
             else if(c=='\"')
                 return 18;
             else if(c=='{')
-                return 19;
-            else if(c=='}')
                 return 20;
-            else if(c==34)
-                return 0;
-
+            else if(c=='}')
+                return 21;
             else
                 return 22;
         }
@@ -202,6 +201,8 @@ namespace LYA1_Lexico3
                     {
                         buffer += c;    
                     }
+                    else
+                        buffer = "";
                     archivo.Read();
                 }
             }

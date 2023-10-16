@@ -1,38 +1,38 @@
-123.45e-8 = Numero
-radioDeLaCircunferencia = Identificador
-; = finSentencia
+{ = llaveInicio
+// Prueba de fuego = comentario
+x26 = Identificador
+= = asignacion
+3.141592 = Numero
+/**/ = comentario
+++ = incTermino
++ = opTermino
+/***/ = comentario
+-- = incTermino
+- = opTermino
+/****/ = comentario
 && = opLogico
 & = Caracter
 || = opLogico
 | = Caracter
+== = opRelacional
+= = asignacion
 ! = Caracter
 != = opRelacional
-> = opRelacional
->= = opRelacional
+= = asignacion
+//Test = comentario
+< = opRelacional
 < = opRelacional
 <> = opRelacional
-< = opRelacional
-<= = opRelacional
-+ = opTermino
-++ = incTermino
+> = opRelacional
+> = opRelacional
+"Hola mundo" = cadena
+; = finSentencia
+/*Cadena Vacia*/ = comentario
+"" = cadena
+; = finSentencia
 += = incTermino
-- = opTermino
--- = incTermino
 -= = incTermino
-% = opFactor
-%= = incFactor
-* = opFactor
 *= = incFactor
-? = opTernario
-? = opTernario
-? = opTernario
-{} = llaveInicio
-} = llaveInicio
-} = llaveInicio
-"hola mundo" = cadena
-/ = Caracter
 /= = incFactor
-/*audel
-PERA
-1909
-*/ = comentario
+} = Caracter
+" = cadena
